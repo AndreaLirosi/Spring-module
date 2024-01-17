@@ -1,10 +1,10 @@
-package develhope.swagger;
+package com.example.CORS;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SwaggerApplicationTests {
+class CorsApplicationTests {
 
 	@Test
 	void contextLoads() {

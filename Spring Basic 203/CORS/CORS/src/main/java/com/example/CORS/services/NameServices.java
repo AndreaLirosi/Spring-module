@@ -1,4 +1,4 @@
-package develhope.swagger.services;
+package com.example.CORS.services;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,13 +1,13 @@
-package develhope.swagger;
+package com.example.CORS;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SwaggerApplication {
+public class CorsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SwaggerApplication.class, args);
+		SpringApplication.run(CorsApplication.class, args);
 	}
 
 }
