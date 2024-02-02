@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/v2")
-public class Ciao {
+public class CiaoController {
     @GetMapping(path = "/ciao/{province}")
 
     public User greet (@RequestParam(value = "name")String name,
