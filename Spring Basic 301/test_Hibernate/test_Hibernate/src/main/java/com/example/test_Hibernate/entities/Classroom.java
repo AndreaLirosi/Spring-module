@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @Entity
 @NoArgsConstructor
@@ -12,6 +14,8 @@ import lombok.NoArgsConstructor;
 @Table
 public class Classroom {
 
+    @OneToMany(mappedBy = "Class")
+    private List<Enrollments> enrollments;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id_class;

@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity // questa classe è una classe di entità JPA, che verrà mappata su una tabella nel database.
 @Table  // Specifica che la classe sarà mappata a una tabella nel database
 @Data   //  Annotazione di Lombok che genera automaticamente i metodi (come toString, equals) per tutti i campi della classe
@@ -12,6 +14,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor //  Annotazione di Lombok che genera un costruttore con tutti gli argomenti.
 
 public class Students {
+
+    @OneToMany(mappedBy = "student")
+    private List<Enrollments> enrollments;
 
     @Id // si genera una id come chiave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY) // si imposta il metodo auto per generare l'id

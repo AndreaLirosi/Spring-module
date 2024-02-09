@@ -5,9 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Data
 @Entity
 @NoArgsConstructor
@@ -15,17 +12,17 @@ import java.util.List;
 @Table
 
 /*enrollments dovrebbe essere un entità che gestisce l'iscrizione di studenti a una classe*/
-public class enrollments {
+public class Enrollments {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-
-    @Column(unique = true, name = "studentId", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(unique = true, updatable = true, name = "studentId", nullable = false)
     private long studentId;
 
-
-    @Column(unique = true, name = "classId", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(unique = true, updatable = true, name = "classId", nullable = false)
     private long classId;
 }
