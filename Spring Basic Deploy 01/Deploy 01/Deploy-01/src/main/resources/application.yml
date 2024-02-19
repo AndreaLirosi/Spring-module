@@ -1,0 +1,17 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: spring-boot-app
+  profiles:
+    active: dev
+
+info:
+  app:
+    version: "0.0.3"
+    devName: "Andrea"
+
+
+
+

@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: INFO
+    com.example.Servizi.Logging: DEBUG
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS

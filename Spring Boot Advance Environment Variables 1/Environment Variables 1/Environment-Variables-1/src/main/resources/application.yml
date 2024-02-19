@@ -1,0 +1,9 @@
+myCustomVarTree:
+  authCode: xyz458
+  devName: "Andrea"
+spring:
+  application:
+    name: prod
+  server:
+    port: 4500
+
